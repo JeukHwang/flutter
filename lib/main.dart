@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_todo_app/counter.dart';
+import 'package:flutter_todo_app/settings.dart';
 import 'package:flutter_todo_app/todo.dart';
 
 void main() {
@@ -12,6 +13,7 @@ class MainApp extends StatelessWidget {
             '/': (context) => const IndexApp(),
             '/todo': (context) => const TodoApp(),
             '/counter': (context) => const CounterApp(),
+            '/settings': (context) => const SettingsApp(),
           };
 
   const MainApp({super.key});
