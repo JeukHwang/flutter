@@ -20,8 +20,8 @@ jobs:
           git config --global user.email jeukhwang@gmail.com
           git config --global user.name jeukhwang.dev
           git status
-          git remote add origin https://github.com/JeukHwang/flutter_app.git
-          git checkout -b gh-pages
-          git add --all
-          git commit -m "update"
-          git push origin gh-pages -f
+      - run: git remote add origin https://github.com/JeukHwang/flutter_app.git
+      - run: git checkout -b gh-pages
+      - run: git add --all
+      - run: git commit -m "update"
+      - run: git push origin gh-pages -f
